@@ -5,7 +5,7 @@
   <title>Sorted Articles</title>
 </head>
 <body>
-  <ul id="band"></ul>
+  <ul id="bands"></ul>
 
   <script>
     const bands = [
@@ -36,8 +36,8 @@
       return nameA.localeCompare(nameB);
     });
 
-    // Populate the unordered list with id "band" with the sorted articles
-    const ul = document.getElementById('band');
+    // Populate the unordered list with id "bands" with the sorted articles
+    const ul = document.getElementById('bands');
     sortedBands.forEach(band => {
       const li = document.createElement('li');
       li.textContent = band;
